@@ -1,0 +1,17 @@
+name: pppoe
+
+topology:
+  nodes:
+    gateway:
+      kind: linux
+      image: acnlab
+      mgmt-ipv4: 192.168.1.1
+    border:
+      kind: linux
+      image: acnlab
+      mgmt-ipv4: 192.168.1.2
+  mgmt:
+      network: pppoe
+      ipv4-subnet: 192.168.1.0/24
+  links:
+    - endpoints: ["gateway:eth1", "border:eth1"]
