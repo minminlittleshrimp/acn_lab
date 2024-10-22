@@ -4,7 +4,7 @@ FROM ubuntu:latest
 RUN apt-get update 
 RUN apt-get install -y openssh-server
 RUN apt-get install -y pppoe pppoeconf
-RUN apt-get install -y net-tools
+RUN apt-get install -y net-tools iputils-ping netcat-traditional
 RUN apt-get install -y kmod vim python3
 
 # systemctl replacement
