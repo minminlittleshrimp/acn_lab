@@ -1,0 +1,13 @@
+all:
+  vars:
+    # The generated inventory is assumed to be used from the clab host.
+    # Hence no http proxy should be used. Therefore we make sure the http
+    # module does not attempt using any global http proxy.
+    ansible_httpapi_use_proxy: false
+  children:
+    linux:
+      hosts:
+        clab-pppoe-border:
+          ansible_host: 192.168.1.3
+        clab-pppoe-gateway:
+          ansible_host: 192.168.1.2
