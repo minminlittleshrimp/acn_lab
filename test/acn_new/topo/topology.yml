@@ -1,0 +1,13 @@
+name: test
+topology:
+  nodes:
+    bras:
+      kind: linux
+      image: pppoe_server
+    gtw:
+      kind: linux
+      image: pppoe_client
+  links:
+    - endpoints: ["bras:1-1", "gtw:e1-1"]
+
+
