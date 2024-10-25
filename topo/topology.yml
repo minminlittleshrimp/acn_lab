@@ -1,12 +1,11 @@
-name: pppoe
-
+name: test
 topology:
   nodes:
-    gateway:
+    bras:
       kind: linux
-      image: acn
-    border:
+      image: pppoe_server
+    gtw:
       kind: linux
-      image: acn
+      image: pppoe_client
   links:
-    - endpoints: ["gateway:e1-1", "border:e1-1"]
+    - endpoints: ["bras:eth1", "gtw:eth1"]
