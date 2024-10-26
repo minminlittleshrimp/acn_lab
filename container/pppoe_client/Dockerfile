@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 RUN apt-get update && apt-get remove pppoe
 RUN apt-get install -y ppp ppp-dev pppoeconf git gcc make vim
 RUN apt-get install -y net-tools iputils-ping netcat-traditional
-RUN apt-get install -y iptables openssh-server
+RUN apt-get install -y iptables openssh-server traceroute
 RUN mkdir /var/run/sshd
 RUN passwd -d root
 
