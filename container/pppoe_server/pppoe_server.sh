@@ -20,10 +20,6 @@ iface e1-3 inet static
 auto e1-4
 iface e1-4 inet static
 	address 20.20.20.1/24
-
-auto e1-5
-iface e1-5 inet static
-	address 20.20.20.1/24
 EOL
 
 # DNS server
@@ -75,5 +71,4 @@ pppoe-server -C isp -L 20.20.20.1 -p /etc/ppp/allip -I e1-1 -F &
 pppoe-server -C isp -L 20.20.20.1 -p /etc/ppp/allip -I e1-2 -F &
 pppoe-server -C isp -L 20.20.20.1 -p /etc/ppp/allip -I e1-3 -F &
 pppoe-server -C isp -L 20.20.20.1 -p /etc/ppp/allip -I e1-4 -F &
-pppoe-server -C isp -L 20.20.20.1 -p /etc/ppp/allip -I e1-5 -F &
 
