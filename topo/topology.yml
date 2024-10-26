@@ -1,0 +1,27 @@
+name: lab
+topology:
+  nodes:
+    broadband:
+      kind: linux
+      image: server
+    gtw1:
+      kind: linux
+      image: client
+    gtw2:
+      kind: linux
+      image: client
+    gtw3:
+      kind: linux
+      image: client
+    gtw4:
+      kind: linux
+      image: client
+    gtw5:
+      kind: linux
+      image: client
+  links:
+    - endpoints: ["broadband:e1-1", "gtw1:eth1"]
+    - endpoints: ["broadband:e1-2", "gtw2:eth2"]
+    - endpoints: ["broadband:e1-3", "gtw3:eth3"]
+    - endpoints: ["broadband:e1-4", "gtw4:eth4"]
+    - endpoints: ["broadband:e1-5", "gtw5:eth5"]
