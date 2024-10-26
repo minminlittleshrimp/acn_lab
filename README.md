@@ -42,8 +42,13 @@ Reconfigure only:
 ```
 # sudo containerlab deploy topo/topology.yml --reconfigure
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 
 =======
 ```
 >>>>>>> 691b8a2 (NAT config and scaling)
+=======
+```
+
+>>>>>>> 238aae0 (update steps.txt)

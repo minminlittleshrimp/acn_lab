@@ -3,19 +3,19 @@ topology:
   nodes:
     broadband:
       kind: linux
-      image: server
+      image: pppoe-server
     gtw1:
       kind: linux
-      image: client
+      image: pppoe-client
     gtw2:
       kind: linux
-      image: client
+      image: pppoe-client
     gtw3:
       kind: linux
-      image: client
+      image: pppoe-client
     gtw4:
       kind: linux
-      image: client
+      image: pppoe-client
   links:
     - endpoints: ["broadband:e1-1", "gtw1:e1-1"]
     - endpoints: ["broadband:e1-2", "gtw2:e1-1"]
