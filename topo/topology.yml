@@ -1,7 +1,7 @@
 name: lab
 topology:
   nodes:
-    broadband:
+    bng:
       kind: linux
       image: pppoe-server
     gtw1:
@@ -17,7 +17,7 @@ topology:
       kind: linux
       image: pppoe-client
   links:
-    - endpoints: ["broadband:e1-1", "gtw1:e1-1"]
-    - endpoints: ["broadband:e1-2", "gtw2:e1-1"]
-    - endpoints: ["broadband:e1-3", "gtw3:eth1"]
-    - endpoints: ["broadband:e1-4", "gtw4:eth1"]
+    - endpoints: ["bng:e1-1", "gtw1:e1-1"]
+    - endpoints: ["bng:e1-2", "gtw2:e1-1"]
+    - endpoints: ["bng:e1-3", "gtw3:eth1"]
+    - endpoints: ["bng:e1-4", "gtw4:eth1"]
