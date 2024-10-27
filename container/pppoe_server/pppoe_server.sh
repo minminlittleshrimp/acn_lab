@@ -46,11 +46,11 @@ EOL
 
 # pap setup
 cat <<EOL > /etc/ppp/pap-secrets
-user1	*	pass1	*
-user2	*	pass2	*
-user3	*	pass3	*
-user4	*	pass4	*
-user5	*	pass5	*
+"user1"	*	"pass1" *
+"user2"	*	"pass2"	*
+"user3"	*	"pass3"	*
+"user4"	*	"pass4"	*
+"user5"	*	"pass5"	*
 EOL
 
 # ip range

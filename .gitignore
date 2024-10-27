@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 clab*
 .topo*
+=======
+.*
+clab-*
+!.gitignore
+>>>>>>> 020d847 (edited according to reviews)

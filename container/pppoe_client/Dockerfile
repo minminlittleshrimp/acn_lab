@@ -16,7 +16,4 @@ RUN sed -i 's/#Port 22/Port 22/' /etc/ssh/sshd_config && \
     sed -i 's/PermitEmptyPasswords no/PermitEmptyPasswords yes/' /etc/ssh/sshd_config && \
     sed -i 's/UsePAM yes/UsePAM no/' /etc/ssh/sshd_config
 
-COPY pppoe_client.sh /usr/local/bin/pppoe_client.sh
-RUN chmod +x /usr/local/bin/pppoe_client.sh
-
 CMD ["/usr/sbin/sshd", "-D"]
