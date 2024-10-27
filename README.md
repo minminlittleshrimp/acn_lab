@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Lab project for VGU Master ITS ACN
 This is the project of our group using PPPoE to design and build a telecommunication network. <br>
 PPPoE is widely used by ISPs to manage customer connections, providing authentication, encryption, and dynamic IP address assignment over Ethernet networks. Our goal is to configure a functional network that allows subscribing clients to the network and let them gain access and use the services.
@@ -19,10 +18,6 @@ There are some restrictions for this such as:
 
 
 ### Commands for building docker image and deploying Containerlab
-=======
-Lab for VGU Master ITS ACN
-
->>>>>>> 691b8a2 (NAT config and scaling)
 Build docker image:
 ```
 # docker build -t acnlab .
@@ -41,14 +36,5 @@ Containerlab deploy:
 Reconfigure only:
 ```
 # sudo containerlab deploy topo/topology.yml --reconfigure
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```
 
-=======
-```
->>>>>>> 691b8a2 (NAT config and scaling)
-=======
-```
-
->>>>>>> 238aae0 (update steps.txt)
