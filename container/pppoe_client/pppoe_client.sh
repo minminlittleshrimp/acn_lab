@@ -62,8 +62,3 @@ EOL
 
 # Inform the user that the file has been created
 echo "Configuration file created at $FILE_PATH with user: $USER_NAME and NIC: $NIC"
-
-# DNS server
-cat <<EOL > /etc/resolve.conf
-nameserver 20.20.20.100
-EOL
