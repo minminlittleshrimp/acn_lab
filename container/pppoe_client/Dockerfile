@@ -4,6 +4,7 @@ RUN apt-get update && apt-get remove pppoe
 RUN apt-get install -y ppp ppp-dev pppoeconf git gcc make vim
 RUN apt-get install -y net-tools iputils-ping netcat-traditional
 RUN apt-get install -y iptables openssh-server traceroute tcpdump
+RUN apt-get install -y dnsutils
 RUN mkdir /var/run/sshd
 RUN passwd -d root
 
@@ -15,5 +16,8 @@ RUN sed -i 's/#Port 22/Port 22/' /etc/ssh/sshd_config && \
     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config && \
     sed -i 's/PermitEmptyPasswords no/PermitEmptyPasswords yes/' /etc/ssh/sshd_config && \
     sed -i 's/UsePAM yes/UsePAM no/' /etc/ssh/sshd_config
+
+COPY pppoe_client.sh /usr/local/bin/pppoe_client.sh
+RUN chmod +x /usr/local/bin/pppoe_client.sh
 
 CMD ["/usr/sbin/sshd", "-D"]

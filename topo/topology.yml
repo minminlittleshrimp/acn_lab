@@ -4,18 +4,15 @@ topology:
     bng:
       kind: linux
       image: pppoe_server
-    gtw1:
+
+    gtw1: &gtw_base
       kind: linux
       image: pppoe_client
-    gtw2:
-      kind: linux
-      image: pppoe_client
-    gtw3:
-      kind: linux
-      image: pppoe_client
-    gtw4:
-      kind: linux
-      image: pppoe_client
+
+    gtw2: *gtw_base
+    gtw3: *gtw_base
+    gtw4: *gtw_base
+
   links:
     - endpoints: ["bng:e1-1", "gtw1:e1-1"]
     - endpoints: ["bng:e1-2", "gtw2:e1-1"]
