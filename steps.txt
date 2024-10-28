@@ -1,0 +1,6 @@
+1. Create docker images with 2 Dockerfile included in the repo
+2. Deploy containerlab with the topology.yml file
+3. Go to the server container and run pppoe_server.sh
+4. For the clients with eth endpoint run pppoeconf and input username/password
+5. For the clients with e1 endpoint follow step 4 then edit dsl-provider, change the line with nic-e1-1-1 to nic-e1-1 (only if pppoeconf return an error like option not recognized)
+6. For testing use traceroute and verify if it goes through the 20.20.20.1 gateway first, and netcat similar to Minh's email.

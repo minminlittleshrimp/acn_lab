@@ -1,2 +1,3 @@
-clab*
-.topo*
+.*
+clab-*
+!.gitignore
