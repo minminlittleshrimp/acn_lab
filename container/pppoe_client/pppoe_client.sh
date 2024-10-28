@@ -65,5 +65,5 @@ echo "Configuration file created at $FILE_PATH with user: $USER_NAME and NIC: $N
 
 # DNS server
 cat <<EOL > /etc/resolve.conf
-nameserver 20.20.20.100
+nameserver 192.168.0.100
 EOL
