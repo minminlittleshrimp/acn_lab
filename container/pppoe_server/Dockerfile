@@ -20,5 +20,7 @@ RUN sed -i 's/#Port 22/Port 22/' /etc/ssh/sshd_config && \
 
 COPY pppoe_server.sh /usr/local/bin/pppoe_server.sh
 RUN chmod +x /usr/local/bin/pppoe_server.sh
+COPY pppoe_check.sh /usr/local/bin/pppoe_check.sh
+RUN chmod +x /usr/local/bin/pppoe_check.sh
 
 CMD ["/usr/sbin/sshd", "-D"]
