@@ -11,10 +11,10 @@ format_output() {
         sleep 0.5
     done < /etc/ppp/pppoe-server-options
     echo -e "+-------------------------------|"
-    echo -e "|PO/Architect: Minh, Luu Quang  |"
-    echo -e "|Dev: Nam, Truong Hoang         |"
-    echo -e "|Scrum: Thu, Mai Thi Hang       |"
-    echo -e "|Test: Hao, Ho Vinh             |"
+    echo -e "|PO/Architect: Minh Luu         |"
+    echo -e "|Dev: Nam T.                    |"
+    echo -e "|Scrum: Thu M.                  |"
+    echo -e "|Test: Hao H.                   |"
     echo -e "+-------------------------------+"
 }
 
